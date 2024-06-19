@@ -1,8 +1,11 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
+
 import { StyleSheet, Image, View, Pressable, Linking } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { AntDesign } from '@expo/vector-icons';
+import { Zocial } from '@expo/vector-icons';
 
 export default function TabTwoScreen() {
   return (
@@ -20,49 +23,49 @@ export default function TabTwoScreen() {
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/whatsapp.png')} style={styles.icon} />
           <Pressable  onPress={() => Linking.openURL('https://wa.me/qr/5D2XL6JUTF74P1')}>
-            <ThemedText>Whatsapp</ThemedText>
+            <ThemedText type="social">Whatsapp</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/linkedin.png')} style={styles.icon} />
           <Pressable  onPress={() => Linking.openURL('https://www.linkedin.com/in/miguel-vagula-5bb475313/')}>
-            <ThemedText>Linkedin</ThemedText>
+            <ThemedText type="social">Linkedin</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/github.png')} style={styles.icon} />
           <Pressable onPress={() => Linking.openURL('https://github.com/MiguelVagula/')}>
-            <ThemedText>Github</ThemedText>
+            <ThemedText type="social">Github</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
-          <Image source={require('@/assets/images/gmail.png')} style={styles.icon} />
+        <Zocial name="gmail" size={35} color="red" />
           <Pressable  onPress={() => Linking.openURL('mailto:miguelsvagulao@gmail.com')}>
-            <ThemedText>Email</ThemedText>
+            <ThemedText type="social">Email</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
-          <Image source={require('@/assets/images/youtube.png')} style={styles.icon} />
+        <AntDesign name="youtube" size={35} color="red" />
           <Pressable  onPress={() => Linking.openURL('https://www.youtube.com/channel/UCdo9j36eEcVy4iwn0kBEp-Q')}>
-            <ThemedText>Youtube</ThemedText>
+            <ThemedText type="social">Youtube</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/instagram.png')} style={styles.icon} />
           <Pressable  onPress={() => Linking.openURL('https://www.instagram.com/miguelsv_eu/')}>
-            <ThemedText>Instagram</ThemedText>
+            <ThemedText type="social">Instagram</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/telefone.png')} style={styles.icon} />
           <Pressable onPress={() => Linking.openURL('tel:5518996553656')}>
-            <ThemedText>Telefone</ThemedText>
+            <ThemedText type="social">Telefone</ThemedText>
           </Pressable>
         </ThemedView>
 

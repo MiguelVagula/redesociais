@@ -12,31 +12,22 @@ export default function TabTwoScreen() {
         <Image source={require('@/assets/images/eu.png')} style={styles.headerImage} />
       }
     >
+      <ThemedView>
+        
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Meu Perfil</ThemedText>
       </ThemedView>
 
-      <ThemedView style={styles.contentContainer}>
-        <ThemedView style={styles.redes}>
-          <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
-            <ThemedText>Whatsapp</ThemedText>
-        </ThemedView>
+      <ThemedView style={styles.text}>
+        <ThemedText type="title">Miguel da Silva Vagula</ThemedText>
+      </ThemedView>
 
-        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
+      <ThemedView style={styles.titleContainer}>
+        <ThemedText type="title">Meu Prof. Favorito 👇</ThemedText>
+      </ThemedView>
 
-        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
+        <Image source={require('@/assets/images/gra.jpg')} style={styles.gra} />
 
-        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
-
-        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
-
-        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
-
-        <Image source={require('@/assets/images/eu.png')}  />
-
-        <Image source={require('@/assets/images/eu.png')} />
-
-        <Image source={require('@/assets/images/eu.png')}/>
       
 
       </ThemedView>
@@ -72,7 +63,14 @@ const styles = StyleSheet.create({
     height: 40,
     marginRight: 8,
   },
+  gra: {
+    width: 300,
+    height: 300,
+    marginRight: 8,
+  },
   text: {
-    fontSize: 16,
+    fontSize: 10,
+    alignItems: "center",
+    textAlign: "center",
   },
 });

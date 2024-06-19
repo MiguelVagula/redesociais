@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     padding: 32,
+    //backgroundColor: "#2f2d2d",
     gap: 16,
     overflow: 'hidden',
   },
