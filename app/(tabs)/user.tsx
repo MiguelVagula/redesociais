@@ -9,7 +9,7 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#000000', dark: '#000000' }}
       headerImage={
-        <Image source={require('@/assets/images/logo.jpg')} style={styles.headerImage} />
+        <Image source={require('@/assets/images/eu.png')} style={styles.headerImage} />
       }
     >
       <ThemedView style={styles.titleContainer}>
@@ -18,9 +18,26 @@ export default function TabTwoScreen() {
 
       <ThemedView style={styles.contentContainer}>
         <ThemedView style={styles.redes}>
-          <Image source={require('@/assets/images/mim.png')} style={styles.icon} />
+          <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
             <ThemedText>Whatsapp</ThemedText>
         </ThemedView>
+
+        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
+
+        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
+
+        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
+
+        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
+
+        <Image source={require('@/assets/images/eu.png')} style={styles.icon} />
+
+        <Image source={require('@/assets/images/eu.png')}  />
+
+        <Image source={require('@/assets/images/eu.png')} />
+
+        <Image source={require('@/assets/images/eu.png')}/>
+      
 
       </ThemedView>
     </ParallaxScrollView>
