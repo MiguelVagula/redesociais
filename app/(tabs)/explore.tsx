@@ -6,6 +6,7 @@ import { ThemedView } from '@/components/ThemedView';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { AntDesign } from '@expo/vector-icons';
 import { Zocial } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 export default function TabTwoScreen() {
   return (
@@ -42,16 +43,23 @@ export default function TabTwoScreen() {
         </ThemedView>
 
         <ThemedView style={styles.redes}>
-        <Zocial name="gmail" size={35} color="red" />
+        <Zocial name="gmail" size={36} color="red" style={styles.icon} />
           <Pressable  onPress={() => Linking.openURL('mailto:miguelsvagulao@gmail.com')}>
             <ThemedText type="social">Email</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
-        <AntDesign name="youtube" size={35} color="red" />
+        <AntDesign name="youtube" size={36} color="red" style={styles.icon}/>
           <Pressable  onPress={() => Linking.openURL('https://www.youtube.com/channel/UCdo9j36eEcVy4iwn0kBEp-Q')}>
             <ThemedText type="social">Youtube</ThemedText>
+          </Pressable>
+        </ThemedView>
+
+        <ThemedView style={styles.redes}>
+        <FontAwesome5 name="steam" size={36} color="black" style={styles.icon} />
+          <Pressable  onPress={() => Linking.openURL('https://steamcommunity.com/id/miguel2448')}>
+            <ThemedText type="social">Steam</ThemedText>
           </Pressable>
         </ThemedView>
 
@@ -81,6 +89,8 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     padding: 16,
+    textAlign: 'center',
+    alignItems: 'center',
   },
   contentContainer: {
     alignItems: 'center',
@@ -93,12 +103,13 @@ const styles = StyleSheet.create({
     marginTop: 16,
     backgroundColor: 'white',
     borderRadius: 100,
-    padding: 10
+    padding: 10,
+    width: 250
   },
   icon: {
     width: 40,
     height: 40,
-    marginRight: 8,
+    marginRight: "20%",
   },
   text: {
     fontSize: 16,
